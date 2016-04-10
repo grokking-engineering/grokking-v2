@@ -1,0 +1,188 @@
+/*------Base------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	padding: 40px 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+	color: #B21924;
+	padding: 20px 0;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	color: #B21924;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #B21924;
+}
+
+/*-----Components-----*/
+
+.center-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn {}
+
+.btn-primary {
+    background-color: rgba(189, 32, 44, 0.85);
+    border-color: #B21924;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: rgb(189, 32, 44);
+    border-color: #B21924;
+    background-image: none;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-color: rgb(189, 32, 44);
+    border-color: #B21924;
+    background-image: none;
+}
+
+
+/*-----------*/
+
+.masthead {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.masthead a {
+    color: #333;
+    font-size: 20px;
+}
+
+.navbar-logo {
+    float: left;
+}
+
+.navbar-logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.nav {
+    vertical-align: bottom;
+}
+
+.jumbo {
+    background: url('/assets/img/banner.jpg') no-repeat center/cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+}
+
+.jumbo__heading {
+    padding: 150px 0 20px 0;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    text-transform: none;
+}
+
+.jumbo__btn {
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.section-header p {
+	text-align: center;
+	font-size: 25px;
+}
+
+.about__slideshow {
+		
+}
+
+.slide-holder {
+	text-align: center;	
+}
+
+.slide {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+
+.slide:last-child {
+	margin-left: -4px;
+}
+
+.slide__photo {
+	width: 100%;
+	height: auto;
+}
+
+.slide__calendar {
+	width: 100px;
+	position: absolute;
+	left: 50px;
+	bottom: -50px;
+}
+
+.slide-footer {
+	color: #eee;
+	background-color: #0B0B0B;
+	padding: 90px 50px 20px 50px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.slide-footer a {
+	float: right;
+	padding: 10px 0;
+}
+
+.about__cards {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.card {
+	display: inline-block;
+	width: 400px;
+}
+
+.card-photo img {
+	width: 100%;
+}
+
+.card-footer {
+	text-align: left;
+	color: #eee;
+	background-color: #0B0B0B;
+	padding: 40px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.card-footer a {
+	float: right;
+}
