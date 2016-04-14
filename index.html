@@ -2,76 +2,96 @@
 <html>
 
 <head>
-    <!-- Bootstrap -->
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1, width=device-width, height=device-height" name="viewport">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bxslider/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/js/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="lib/bxslider/jquery.bxslider.min.js"></script>
     <title>Grokking Vietnam</title>
 </head>
 
 <body>
-    <header class="masthead">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-logo" href="#page-top"><img class="logo" src="/assets/img/logo.png"></a>
+    <header class="masthead" id="home">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="#page-top"><img class="logo" src="/assets/img/logo.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sponsor">Our Sponsors</a></li>
+                        <li><a href="#contact">Join Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#services">Home</a></li>
-                    <li><a href="#portfolio">About Us</a></li>
-                    <li><a href="#about">Middle</a></li>
-                    <li><a href="#team">Our Sponsors</a></li>
-                    <li><a href="#contact">Join Us</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
-    <div class="jumbo">
+    <section class="jumbo">
         <div class="container jumbo__container">
             <div class="text-center">
-                <h1 class="jumbo__heading">Building a community of highly-skilled </br> Vietnamese software engineers</h1>
-                <a href="#" class="btn btn-primary jumbo__btn">Learn more</a>
+                <h1 class="jumbo__heading">Building a community of highly-skilled Vietnamese software engineers</h1>
+                <a href="#about" class="btn btn-primary jumbo__btn">Learn more</a>
             </div>
         </div>
-    </div>
-    <section class="about">
+    </section>
+    <section class="about" id="about">
         <div class="container">
             <div class="section-header">
                 <h1>What we do</h1>
                 <p>Grokking is an organization aims to help Vietnamese engineers become 10 times better</p>
             </div>
             <div class="about__slideshow">
-                <h2>Monthly technical events</h2>
-                <div class="slideshow">
-                    <div class="slide-holder">
-                        <div class="slide">
-                            <img class="slide__photo" src="/assets/img/about-2.jpg">
-                            <img class="slide__calendar" src="/assets/img/calendar.jpg">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <h2>Monthly technical events</h2>
+                        <div class="slideshow">
+                            <div class="slide-holder">
+                                <ul class="slideme bxslider">
+                                    <li>
+                                        <div>
+                                            <img class="slide-photo" src="/assets/img/about-2_RT.jpg">
+                                            <div class="slide-footer">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                                <a href="#">Discover more</a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="slide-photo" src="/assets/img/about-1_RT.jpg">
+                                            <div class="slide-footer">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                                <a href="#">Discover more</a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img class="slide__photo" src="/assets/img/about-1.jpg">
-                            <img class="slide__calendar" src="/assets/img/calendar.jpg">
-                        </div>
-                    </div>
-                    <div class="slide-footer">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <a href="#">Discover more</a>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
             <div class="about__cards">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-offset-1 col-sm-5">
                         <div class="card">
                             <div class="card-heading">
                                 <h2>Coding competitions</h2>
@@ -89,10 +109,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-5">
                         <div class="card">
                             <div class="card-heading">
-                                <h2>Coding competitions</h2>
+                                <h2>University talks</h2>
                             </div>
                             <div class="card-content">
                                 <div class="card-photo">
@@ -108,62 +128,138 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-wide">
-                    <h2>Online community</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    </p>
-                    <a href="#">Discover more</a>
+                <div class="card__community row">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <div class="card card-wide">
+                            <div class="card-heading">
+                                <h2>Online community</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-photo">
+                                    <img src="/assets/img/community-slack.png">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                    <a href="#">Discover more</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="section-header">
-            <h1>Why we do it?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        </div>
-        <div>
-            <div>
-                <h2>History</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <a href="#">Read more</a>
+    <section class="team">
+        <div class="container">
+            <div class="row">
+                <div class="section-header col-md-10 col-md-offset-1">
+                    <h1>Why we do it</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
             </div>
-            <div>
-                <h2>Team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <a href="#">See the faces</a>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-4">
+                    <h2>History</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#" class="pull-right">Read more</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4 col-md-push-2">
+                    <h2>Team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#" class="pull-right">See the faces</a>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h1>Our sponsors</h1>
-        <div>
-            <div>Silver sponsor</div>
-        </div>
-        <div>
-            <div>Past event sponsor</div>
+    <section class="sponsor" id="sponsor">
+        <div class="container">
+            <h1>Our sponsors</h1>
+            <div class="silver-sponsor text-center">
+                <div class="silver-sponsor__title">
+                    <h2>Silver sponsor</h2>
+                </div>
+                <a href="http://www.tinypulse.com" target="_blank"><img src="/assets/img/tiny-pulse.png"></a>
+            </div>
+            <div class="past-sponsor">
+                <div class="past-sponsor__title">
+                    <h2>Past event sponsors</h2>
+                </div>
+                <div class="row">
+                    <ul class="col-md-offset-2 col-md-9 past-sponsor__holder text-center">
+                        <div class="row">
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://www.hoiio.com" target="_blank"><img src="/assets/img/hoiio.png"></a>
+                            </li>
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://mysquar.com" target="_blank"><img src="/assets/img/mysquar.jpg"></a>
+                            </li>
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://www.siliconstraits.vn" target="_blank"><img src="/assets/img/sss.png"></a>
+                            </li>
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://officience.com" target="_blank"><img src="/assets/img/officience.png"></a>
+                            </li>
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://honestbee.com" target="_blank"><img src="/assets/img/honestbee.png"></a>
+                            </li>
+                            <li class="col-md-2 col-xs-4">
+                                <a href="http://www.chotot.vn" target="_blank"><img src="/assets/img/chotot.jpg"></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-    <section>
-        <h1>Join the community</h1>
-        <p>Join a fast-growing community of quality engineers and discuss highly technical topics</p>
-        <input type="email"></input>
-        <button>Join</button>
-        <p>Submit your email and get an invitation to join our Slack with updates on our future events</p>
+    <section class="join" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h1>Join the community</h1>
+                <p>Join a fast-growing community of quality engineers and discuss highly technical topics</p>
+            </div>
+            <div class="join__form text-center">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-9">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-5">
+                                <input type="email" class="form-control"></input>
+                            </div>
+                            <div class="col-md-2 form__button">
+                                <button class="btn btn-primary form-control">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Submit your email and get an invitation to join our Slack with updates on our future events</p>
+            </div>
+        </div>
     </section>
-    <footer>
-        <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Middle</li>
-            <li>Our sponsors</li>
-            <li>Join us</li>
-        </ul>
-        <div>Grokking Vietnam &copy 2016</div>
-        <div>All Rights Reserved.</div>
+    <footer class="footer">
+        <div class="container text-center">
+            <!--             <ul class="list-inline link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Middle</a></li>
+                <li><a href="#">Our sponsors</a></li>
+                <li><a href="#">Join us</a></li>
+            </ul> -->
+            <div class="copyright">
+                <div>Grokking Vietnam &copy 2016</div>
+                <div>All Rights Reserved.</div>
+            </div>
+        </div>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $('.bxslider').bxSlider();
+    });
+    </script>
 </body>
 
 </html>
