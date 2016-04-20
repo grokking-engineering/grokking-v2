@@ -64,7 +64,7 @@ body {
 .btn {}
 
 .btn-primary {
-    background-color: rgba(191, 30, 45, 0.85);
+    background-color: rgba(191, 30, 45, 0.75);
     border-color: #BF1E2D;
 }
 
@@ -76,9 +76,10 @@ body {
 }
 
 .btn-primary:active,
-.btn-primary.active {
-    background-color: rgb(191, 30, 45);
-    border-color: #BF1E2D;
+.btn-primary.active,
+.btn-primary:visited {
+    background-color: rgb(191, 30, 45) !important;
+    border-color: #BF1E2D !important;
     background-image: none;
 }
 
@@ -247,8 +248,11 @@ body {
     float: right;
 }
 
-.slideshow {
-    padding-left: 15px;
+/*
+- Hack to prevent slide show broken at <320 pixel screen width when using box-sizing: border-box.
+*/
+.slideshow * {
+    box-sizing: content-box; 
 }
 
 @media (max-width: 1200px) and (min-width: 650px) {
