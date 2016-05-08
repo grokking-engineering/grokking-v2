@@ -58,6 +58,11 @@ body {
     margin: 0 auto;
 }
 
+.highlight {
+    color: #BF1E2D;
+    font-weight: bold;
+}
+
 
 /*-----Components-----*/
 
@@ -209,11 +214,14 @@ body {
     padding: 35px 40px 20px 40px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    min-height: 150px;
 }
 
 .slide-footer a {
     float: right;
-    padding: 10px 0;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 .about__cards {
@@ -242,6 +250,7 @@ body {
     background-color: #0B0B0B;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    min-height: 250px;
 }
 
 .card-footer a {
