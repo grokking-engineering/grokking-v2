@@ -415,3 +415,13 @@ body {
         padding-top: 10px;
     }
 }
+
+/*------ ABOUT US ------*/
+.section-content {
+    width: 60%;
+    margin-left: 20%;
+    text-align: justify;
+}
+.section-header {
+    margin-bottom: 50px;
+}
