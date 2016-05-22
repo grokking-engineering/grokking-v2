@@ -29,6 +29,11 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
 @media (max-width: 650px) {
     body {
         font-size: 1.3rem;
@@ -43,6 +48,9 @@ h2 {
         padding: 5px 0;
         font-size: 1.8rem;
         margin: 10px 0;
+    }
+    h3 {
+        font-size: 1.8rem;
     }
 }
 
@@ -67,6 +75,13 @@ body {
 
 /*-----Components-----*/
 
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 .btn {}
 
 .btn-primary {
@@ -89,8 +104,6 @@ body {
     background-image: none;
 }
 
-
-
 @media (max-width: 650px) {
     .section-header p {
         font-size: 1.3rem;
@@ -102,7 +115,7 @@ body {
     margin-bottom: 10px;
     padding-bottom: 5px;
     text-align: left;
-    border-bottom: 5px solid rgba(51,51,51, 1);
+    border-bottom: 5px solid rgba(51, 51, 51, 1);
 }
 
 .sub-header {
@@ -112,6 +125,7 @@ body {
     text-decoration: underline;
     //border-bottom: 5px solid #BF1E2D;
 }
+
 
 /*-----Utility------*/
 
@@ -124,7 +138,9 @@ body {
     display: inline-block;
 }
 
+
 /*-----Header------*/
+
 .masthead {
     padding: 20px 0 5px 0;
 }
@@ -174,20 +190,44 @@ body {
 }
 
 .join-link a {
+    position: relative;
     color: #BF1E2D !important;
     font-weight: 700;
-    font-size: 2.5rem;
+    margin-left: 20px;
 }
 
-/*-----Slogan-----*/
-.jumbo {
-    background: linear-gradient(
-                    rgba(33, 33, 33, 0.0),
-                    rgba(33, 33, 33, 0.7),
-                    rgba(33, 33, 33, 0.8)), 
-                url('/assets/img/banner.jpg') no-repeat center/cover;
-    //background-color: rgba(33, 33, 33, 1);
+.join-link a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.1s ease-in;
+}
 
+.join-link img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 28%;
+    left: -15%;
+}
+
+@media (max-width: 767px) {
+    .join-link a {
+        margin-left: 0;
+    }
+    .join-link img {
+        display: none;
+    }
+    .join-link a:hover {
+        transform: none;
+        transition: all 0.1s ease-in;
+    }
+}
+
+
+/*-----Slogan-----*/
+
+.jumbo {
+    background: linear-gradient( rgba(33, 33, 33, 0.0), rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.8)), url('/assets/img/banner.jpg') no-repeat center/cover;
+    //background-color: rgba(33, 33, 33, 1);
     //background-color: #212121;
     height: 500px;
 }
@@ -213,7 +253,7 @@ body {
         height: 400px;
     }
     .jumbo__container {
-       margin-top: 10%;
+        margin-top: 10%;
     }
     .jumbo__heading {
         padding-bottom: 20px;
@@ -225,7 +265,7 @@ body {
     }
 }
 
-@media (max-width: 650px)  and (min-width: 450px)  {
+@media (max-width: 650px) and (min-width: 450px) {
     .jumbo {
         height: 300px;
     }
@@ -259,7 +299,9 @@ body {
     }
 }
 
+
 /*-----Activities-----*/
+
 .about__what {
     margin-bottom: 50px;
 }
@@ -283,14 +325,21 @@ body {
     padding-top: 5px;
 }
 
-.about .quote {
-    margin: 10px 0;
-}
-
 .about .quote p {
     font-size: 2.5rem;
     font-weight: 600;
     font-style: italic;
+}
+
+@media (max-width: 992px) {
+    .about .quote {
+        margin: 20px 0;
+    }
+    .about .quote p {
+        font-size: 2rem;
+        font-weight: 600;
+        font-style: italic;
+    }
 }
 
 .slide-photo {
@@ -301,7 +350,22 @@ body {
 .slide-photo img {
     height: auto;
     width: 100%;
-    
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .slide-photo {
+        height: auto;
+    }
+    .slideshow {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide-photo {
+        height: auto;
+    }
 }
 
 .about__cards {
@@ -341,14 +405,34 @@ body {
     min-height: 180px;
 }
 
+@media (max-width: 992px) {
+    .card-footer-long {
+        height: auto;
+        min-height: 0;
+    }
+    .card-footer-long .join__form {
+        max-width: 360px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .card-footer-long {
+        height: 400px;
+        min-height: 0;
+    }
+}
 
 .card-footer a {
     float: right;
 }
 
+
 /*
 - Hack to prevent slide show broken at <320 pixel screen width when using box-sizing: border-box.
 */
+
 .slideshow * {
     box-sizing: content-box;
 }
@@ -407,7 +491,6 @@ body {
     .team .container {
         position: static;
     }
-
     .team {
         min-height: 0;
     }
@@ -432,7 +515,6 @@ body {
 .past-sponsor__title {
     padding: 15px 0;
 }
-
 
 .past-sponsor img {
     width: 90px;
@@ -491,6 +573,13 @@ body {
     padding: 40px 0;
 }
 
+.join__form img {
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
 .link {
     padding: 30px 0;
 }
@@ -522,7 +611,9 @@ body {
     }
 }
 
+
 /*------ Slackin ------ */
+
 .slackin-embed iframe {
     width: 100%;
     min-height: 300px;
@@ -530,12 +621,15 @@ body {
     background-color: white;
 }
 
+
 /*------ ABOUT US ------*/
+
 .section-content {
     width: 60%;
     margin-left: 20%;
     text-align: justify;
 }
+
 .section-header {
     margin-bottom: 50px;
 }
