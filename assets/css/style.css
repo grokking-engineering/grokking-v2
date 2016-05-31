@@ -517,7 +517,7 @@ body {
 }
 
 .past-sponsor img {
-    width: 90px;
+    width: 80px;
     height: auto;
 }
 
@@ -527,15 +527,15 @@ body {
 
 .past-sponsor__holder li {
     display: inline-block;
-    padding-bottom: 20px;
+    padding: 10px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .sponsor {
         min-height: 0;
     }
     .silver-sponsor img {
-        max-width: 150px;
+        max-width: 240px;
         height: auto;
     }
     .silver-sponsor__title,
