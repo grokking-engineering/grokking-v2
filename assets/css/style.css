@@ -303,7 +303,26 @@ body {
 /*-----Activities-----*/
 
 .about__what {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.upcoming-event {
+    text-align: center;
+    background: rgba(138,29,40,1);
+    background: -moz-linear-gradient(left, rgba(138,29,40,1) 0%, rgba(27,16,61,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(138,29,40,1)), color-stop(100%, rgba(27,16,61,1)));
+    background: -webkit-linear-gradient(left, rgba(138,29,40,1) 0%, rgba(27,16,61,1) 100%);
+    background: -o-linear-gradient(left, rgba(138,29,40,1) 0%, rgba(27,16,61,1) 100%);
+    background: -ms-linear-gradient(left, rgba(138,29,40,1) 0%, rgba(27,16,61,1) 100%);
+    background: linear-gradient(to right, rgba(138,29,40,1) 0%, rgba(27,16,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a1d28', endColorstr='#1b103d', GradientType=1 );
+    padding: 15px;
+    border-radius: 3px;
+}
+.upcoming-event a {
+    font-size: 18px;
+    color: white;
+    font-style: italic;
 }
 
 .about__what p {
