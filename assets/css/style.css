@@ -68,7 +68,7 @@ body {
 }
 
 .highlight {
-    color: #BF1E2D;
+    color: #BF1E2D !important;
     font-weight: bold;
 }
 
